@@ -1,5 +1,6 @@
 package hello.hello_sprong.service;
 
+import java.util.List;
 import java.util.Optional;
 
 import hello.hello_sprong.domain.Member;
@@ -8,12 +9,16 @@ import hello.hello_sprong.repository.MemoryMemberRepository;
 
 public class MemberService {
 
-    private final MemberRepotsitory memberRepotsitory = new MemoryMemberRepository();
+    private final MemberRepotsitory memberRepotsitory;
+
+    public MemberService(MemberRepotsitory memberRepotsitory){
+        this.memberRepotsitory = memberRepotsitory;
+    }
 
     // 회원가입
     public Long join(Member member){
 
-        // 같은 이름이 있는 중복 회원은 불가능
+        // 중복 회원 검증
         validateDuplicateMember(member);
 
         memberRepotsitory.save(member);
@@ -28,8 +33,14 @@ public class MemberService {
     }
 
     // 전체 회원 조회
-    public List<member> findMebers(){
-        
+    public List<Member> findMembers(){
+        return memberRepotsitory.findAll();
     }
+
+    public Optional<Member> findOne(Long memberId){
+        return memberRepotsitory.findById(memberId);
+    }
+
+    
 
 }
