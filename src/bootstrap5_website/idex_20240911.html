@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the Book</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+<body>
+    <h1>New Book</h1>
+
+    <a href="https://www.youtube.com/watch?v=nCeHeA7IsvU&list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR&index=5">Bootstrap 5 Crash Course Tutorial #5 - Utility Classes</a>
+
+    <div id="myCarousel" class="carousel slide bg-inverse w-50 ms-auto me-auto" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+          <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="https://picsum.photos/500/200" alt="First slide">
+            <div class="carousel-caption">
+              <h3>First slide</h3>
+              <p>This is the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://picsum.photos/500/200" alt="Second slide">
+            <div class="carousel-caption">
+              <h3>Second slide</h3>
+              <p>This is the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://picsum.photos/500/200" alt="Third slide">
+            <div class="carousel-caption">
+              <h3>Third slide</h3>
+              <p>This is the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+
+    <div class="progress">
+        <div class="progress-bar bg-success" style="width:40%">
+          Free Space
+        </div>
+        <div class="progress-bar bg-warning" style="width:10%">
+          Warning
+        </div>
+        <div class="progress-bar bg-danger" style="width:20%">
+          Danger
+        </div>
+    </div>
+
+    <div class="container-lg my-5">
+        <h2>basic grid</h2>
+        <div class="row justify-content-start">
+            <div class="col-4 bg-secondary">
+              One of columns
+            </div>
+            <div class="col-2 bg-primary mx-1">
+                Center
+            </div>
+            <div class="col-4 bg-secondary">
+              One of columns
+            </div>
+        </div>
+    </div>
+
+    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p class="lead text-center">test</p>
+    <p class="text-decoration-underline">underline</p>
+    <p class="text-primary">primary</p>
+    <p class="text-white bg-primary">text-white bg-primary</p>
+
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-lg btn-danger">Danger</button>
+    <button type="button" class="btn btn-sm btn-warning">Warning</button>
+    <button type="button" class="btn btn-outline-primary btn-info">Info</button>
+    <button type="button" class="btn btn-outline-secondary btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+    <br>
+    <br>
+    <a href="#" class="btn btn-info">info a tag</a>
+    <br>
+    <div class="bg-primary m-2 p-3">small margin and padding </div>
+    <div class="bg-primary my-2 px-3">y margin x padding </div>
+    <div class="bg-primary m-2"> margin top bottom satrt end </div>
+    <div class="m-3 p-3 border-start border-danger border-5">border</div>
+    <div class="m-3 p-3 rounded-pill border border-5">pill shape</div>
+    
+    <div class="container-fluid">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, ipsa quos ex sint quod nulla? Tempore est doloremque ex totam facere nesciunt. Praesentium dolores eum et dicta? Illo, quia repellendus!</div>
+
+    <div class="container-xl my-5">
+        <h2>100% width until xl</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, inventore earum debitis, quibusdam veniam fugiat nemo quis ut eos, dicta nihil. Alias iure dignissimos tempore id quam ex voluptas eligendi.</p>
+    </div>
+
+    <div class="container-lg my-5">
+        <h2>justifying columns</h2>
+        <div class="row justify-content-between">
+            <div class="col-md-3 col-xl-5">
+                <div class="p-5 bg-danger text-light">col1</div>
+            </div>
+            <div class="col-md-3 col-xl-1">
+                <div class="p-5 bg-secondary text-light">col1</div>
+            </div>
+            <div class="col-md-3 col-xl-1">
+                <div class="p-5 bg-success text-light">col1</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
